@@ -33,6 +33,7 @@ do
         echo "Cloning the repo $i..."
         git clone $BASE_URL/$i "$GH_ORG/$i"
         cd "$GH_ORG/$i"
+        # grab all remote branches and track them locally
         for branch in `git branch -a | grep remotes | grep -v HEAD | grep -v master `; do
             git branch --track ${branch#remotes/origin/} $branch
         done
@@ -53,6 +54,8 @@ do
     if [ "$STASH_RC" != "No local changes to save" ]; then
         git stash pop
     fi
+    # prune local tracking branches that have their remotes deleted
+    git remote prune origin
     cd ../..
 done
 
