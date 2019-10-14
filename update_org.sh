@@ -17,7 +17,7 @@ GH_ORG=$1
 BASE_URL="https://github.com/$GH_ORG"
 
 # if the org is special cased as 'github', don't append the org to it
-if [[ $GH_ORG -eq "github" ]] ; then
+if [[ $GH_ORG == "github" ]] ; then
     BASE_URL="https://github.com"
 fi
 
@@ -34,7 +34,7 @@ for i in "${repos[@]}"
 do
     FOLDER=$GH_ORG/$i
     # if the org is special cased as 'github', don't append the org folder to it
-    if [[ $GH_ORG -eq "github" ]] ; then
+    if [[ $GH_ORG == "github" ]] ; then
         echo "Special github org handling."
         FOLDER=$i
     fi
