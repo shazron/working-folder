@@ -24,12 +24,6 @@ fi
 # read the lines in the file into a `repos` array
 IFS=$'\n' read -d '' -r -a repos < "./$GH_ORG.txt"
 
-# create a subfolder if does not exist
-if [[ ! -d $GH_ORG ]]; then
-    echo "The subfolder '$GH_ORG' does not exist, creating..."
-    mkdir $GH_ORG
-fi
-
 echo "-----Start updating $BASE_URL repos-----"
 for i in "${repos[@]}"
 do
@@ -38,6 +32,11 @@ do
     if [[ ! -d "$GH_ORG/$i" ]]; then
         echo "Cloning the repo $i..."
         git clone $BASE_URL/$i "$GH_ORG/$i"
+        cd "$GH_ORG/$i"
+        for branch in `git branch -a | grep remotes | grep -v HEAD | grep -v master `; do
+            git branch --track ${branch#remotes/origin/} $branch
+        done
+        cd ../..
     fi
     cd "$GH_ORG/$i"
     # save the working branch
@@ -46,7 +45,7 @@ do
     STASH_RC=$(git stash)
     # only update master branch
     git checkout master
-    git pull --rebase
+    git pull --rebase --all
     # go back to the working branch
     git checkout $ACTIVE_BRANCH
     # we don't want to pop if we didn't push in the first place,
@@ -54,7 +53,7 @@ do
     if [ "$STASH_RC" != "No local changes to save" ]; then
         git stash pop
     fi
-    cd ..
+    cd ../..
 done
 
 echo "-----Done updating $BASE_URL repos-----"
