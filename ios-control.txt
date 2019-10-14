@@ -1,0 +1,3 @@
+ios-sim
+ios-deploy
+simctl
