@@ -1,0 +1,14 @@
+aio-cli
+aio-cli-plugin-config
+aio-cli-plugin-jwt-auth
+aio-cli-plugin-console
+aio-cli-plugin-cna
+aio-cli-plugin-runtime
+aio-cli-plugin-pgb
+aio-sdk-core
+aio-lib-core-config
+aio-lib-core-errors
+aio-lib-core-logging
+aio-lib-campaign-standard
+adobeio-cna-core-target
+adobeio-cna-core-analytics
