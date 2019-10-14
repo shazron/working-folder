@@ -16,6 +16,11 @@ fi
 GH_ORG=$1
 BASE_URL="https://github.com/$GH_ORG"
 
+# if the org is special cased as 'github', don't append the org to it
+if [[ $GH_ORG -eq "github" ]] ; then
+    BASE_URL="https://github.com"
+fi
+
 if [[ ! -e "./$GH_ORG.txt" ]]; then
     echo "The file '$GH_ORG.txt' does not exist."
     exit 1
@@ -27,19 +32,25 @@ IFS=$'\n' read -d '' -r -a repos < "./$GH_ORG.txt"
 echo "-----Start updating $BASE_URL repos-----"
 for i in "${repos[@]}"
 do
-    echo "-----Updating $GH_ORG/$i-----"
+    FOLDER=$GH_ORG/$i
+    # if the org is special cased as 'github', don't append the org folder to it
+    if [[ $GH_ORG -eq "github" ]] ; then
+        echo "Special github org handling."
+        FOLDER=$i
+    fi
+    echo "-----Updating $FOLDER-----"
     # if the repo does not exist, we clone it
-    if [[ ! -d "$GH_ORG/$i" ]]; then
+    if [[ ! -d $FOLDER ]]; then
         echo "Cloning the repo $i..."
-        git clone $BASE_URL/$i "$GH_ORG/$i"
-        cd "$GH_ORG/$i"
+        git clone $BASE_URL/$i $FOLDER
+        cd $FOLDER
         # grab all remote branches and track them locally
         for branch in `git branch -a | grep remotes | grep -v HEAD | grep -v master `; do
             git branch --track ${branch#remotes/origin/} $branch
         done
         cd ../..
     fi
-    cd "$GH_ORG/$i"
+    cd $FOLDER
     # save the working branch
     ACTIVE_BRANCH=$(git symbolic-ref --short HEAD)
     # try to push to stack, if changes available

@@ -22,3 +22,13 @@ Modify the file `all.txt` with a list of your Github orgs to update, one per lin
 
 `./update_all.sh`
 
+## Special `github` org for different repo sources
+
+Modify the file `github.txt` with a list of repos you want to clone from different sources.
+
+`github.txt`
+```
+shazron/foo
+apache/bar
+```
+
