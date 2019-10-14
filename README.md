@@ -4,8 +4,8 @@ Bash script(s) to set up my open source working folder automatically
 
 ## Give the scripts permissions
 
-`chmod +x ./update_org.sh`
-`chmod +x ./update_all.sh`
+1. `chmod +x ./update_org.sh`
+2. `chmod +x ./update_all.sh`
 
 ## Clone/Update for a particular Github Org
 
