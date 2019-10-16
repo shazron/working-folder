@@ -10,5 +10,9 @@ aio-lib-core-config
 aio-lib-core-errors
 aio-lib-core-logging
 aio-lib-campaign-standard
-adobeio-cna-core-target
-adobeio-cna-core-analytics
+aio-lib-target
+aio-lib-analytics
+aio-lib-state
+aio-lib-files
+aio-e2e-tests
+
