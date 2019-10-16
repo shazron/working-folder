@@ -1,7 +1,7 @@
 #! /bin/bash
 
 usage() { 
-    echo "Usage: $0 <github_org>"  
+    echo "Usage: $0 <github_org> [server]"  
     exit 1  
 } 
 
@@ -9,16 +9,23 @@ if [[ $# -eq 0 ]] ; then
     usage
 fi
 
+
+
 # simple update, nothing fancy, gets things done
 # run from the parent folder CWD (all repos will be siblings)
 
-# this is the base url for the repos
 GH_ORG=$1
-BASE_URL="https://github.com/$GH_ORG"
+SERVER="https://github.com"
+if [[ $2 ]]; then 
+    SERVER=$2
+fi
+
+# this is the base url for the repos
+BASE_URL="$SERVER/$GH_ORG"
 
 # if the org is special cased as 'github', don't append the org to it
 if [[ $GH_ORG == "github" ]] ; then
-    BASE_URL="https://github.com"
+    BASE_URL=$SERVER
 fi
 
 if [[ ! -e "./$GH_ORG.txt" ]]; then
