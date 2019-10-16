@@ -30,17 +30,18 @@ Modify the file `all.txt` with a list of your Github orgs to update, one per lin
 
 `./update_all.sh`
 
-## Special `github` org for different repo sources (Github.com only)
+## Special `github` org for different repo sources
 
-Modify the file `github.txt` with a list of repos you want to clone from different sources.
+Modify the file `github.txt` with a list of repos you want to clone from different sources. Specify a server the repo is from, if it is not from Github.com, as the second argument.
 
 `github.txt`
 ```
 shazron/foo
 apache/bar
+foo/smoo https://mygitserver.com
 ```
 
-## Using a different Git server 
+## Using a different Git server (Org File)
 
 1. Create an org file for your repo, e.g. `myorg.txt`
 2. In `all.txt`, add `myorg` to a new line
@@ -49,4 +50,3 @@ apache/bar
 
 To update just that org, do:
 `./update_org.sh <YOUR_ORG> <YOUR_GIT_SERVER_URL>` 
-
