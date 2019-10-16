@@ -2,7 +2,15 @@
 
 Bash script(s) to set up my open source working folder automatically
 
-## Give the scripts permissions
+## Installation
+
+```bash
+git clone https://github.com/shazron/working-folder.git <YOUR_WORKING_FOLDER_NAME>
+cd <YOUR_WORKING_FOLDER_NAME>
+./update_all.sh
+```
+
+## Give the scripts permissions (optional, only if they don't work)
 
 1. `chmod +x ./update_org.sh`
 2. `chmod +x ./update_all.sh`
