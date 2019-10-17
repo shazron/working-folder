@@ -19,7 +19,7 @@ cd <YOUR_WORKING_FOLDER_NAME>
 
 If you have an org called `adobe`, you would have an `adobe.txt` file that lists all the repos in the org that you want to clone or update.
 
-The script will clone the repo if it does not exist, else it will update the repo. It will also stash any working copies before doing an update.
+The script will clone the repo if it does not exist, else it will update the repo. It will also stash any working copies before doing an update, then restore the stash after.
 
 
 `./update_org.sh <github_org>`
