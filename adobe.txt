@@ -9,6 +9,7 @@ aio-sdk-core
 aio-lib-core-config
 aio-lib-core-errors
 aio-lib-core-logging
+aio-lib-core-tvm
 aio-lib-campaign-standard
 aio-lib-target
 aio-lib-analytics
