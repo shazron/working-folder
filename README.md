@@ -7,7 +7,7 @@ Bash script(s) to set up my open source working folder automatically
 ```bash
 git clone https://github.com/shazron/working-folder.git <YOUR_WORKING_FOLDER_NAME>
 cd <YOUR_WORKING_FOLDER_NAME>
-./update.sh
+./run.sh
 ```
 
 ## Give the script permissions (optional, only if they don't work)
