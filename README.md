@@ -12,7 +12,10 @@ cd <YOUR_WORKING_FOLDER_NAME>
 
 ## Give the script permissions (optional, only if they don't work)
 
+`chmod +x ./run.sh`
 `chmod +x ./update.sh`
+`chmod +x ./clone.sh`
+`chmod +x ./clean.sh`
 
 ## config.txt to specify your git repo list
 
@@ -31,11 +34,11 @@ Empty lines and lines starting with the character `#` are ignored.
 
 ## Clone/update for a particular org
 
-`./update.sh <github_org>`
+`./run.sh <github_org>`
 
 ## Clone/update all
 
-`./update.sh`
+`./run.sh`
 
 ## Specifying a server for a repo
 
