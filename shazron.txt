@@ -1,2 +1,0 @@
-aio-cli-plugin-edge
-working-folder

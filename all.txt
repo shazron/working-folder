@@ -1,6 +1,0 @@
-adobe
-shazron
-AdobeDocs
-ios-control
-apache
-github
