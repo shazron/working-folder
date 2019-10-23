@@ -58,7 +58,7 @@ do
     fi
 
     # if SERVER not specified, use the default server
-    if [ -z !$SERVER ] ; then
+    if [ -z $SERVER ] ; then
         SERVER=$DEFAULT_SERVER
     fi
 
