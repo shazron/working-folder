@@ -18,7 +18,7 @@ adobe/aio-lib-analytics
 adobe/aio-lib-state
 adobe/aio-lib-files
 adobe/aio-e2e-tests
-aobe/aio-tvm
+adobe/aio-tvm
 adobe/adobeio-cna-scripts
 
 # AdobeDocs
