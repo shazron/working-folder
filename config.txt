@@ -8,6 +8,7 @@ adobe/aio-cli-plugin-cna
 adobe/aio-cli-plugin-runtime
 adobe/aio-cli-plugin-pgb
 adobe/aio-sdk-core
+adobe/aio-sdk
 adobe/aio-lib-core-config
 adobe/aio-lib-core-errors
 adobe/aio-lib-core-logging
