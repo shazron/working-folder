@@ -1,6 +1,6 @@
 # working-folder
 
-Bash script(s) to set up my open source working folder automatically
+Bash script(s) to set up my open source working folder automatically, and update existing folders if necessary.
 
 ## Installation
 
