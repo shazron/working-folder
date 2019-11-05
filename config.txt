@@ -19,7 +19,11 @@ adobe/aio-lib-state
 adobe/aio-lib-files
 adobe/aio-e2e-tests
 adobe/aio-tvm
-adobe/adobeio-cna-scripts
+adobe/aio-app-scripts
+adobe/create-aio-lib
+adobe/aio-lib-template
+adobe/eslint-config-aio-lib-config
+
 
 # AdobeDocs
 AdobeDocs/adobeio-runtime
