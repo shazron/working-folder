@@ -6,6 +6,8 @@ adobe/aio-cli-plugin-console
 adobe/aio-cli-plugin-cna
 adobe/aio-cli-plugin-runtime
 adobe/aio-cli-plugin-pgb
+adobe/aio-cli-plugin-app
+adobe/aio-cli-plugin-target
 adobe/aio-sdk-core
 adobe/aio-sdk
 adobe/aio-lib-core-config
