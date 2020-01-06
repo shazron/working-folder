@@ -1,5 +1,6 @@
 # adobe
 adobe/aio-cli
+adobe/aio-cli-plugin-auth
 adobe/aio-cli-plugin-config
 adobe/aio-cli-plugin-jwt-auth
 adobe/aio-cli-plugin-console
