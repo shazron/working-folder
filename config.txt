@@ -17,9 +17,9 @@ adobe/aio-lib-core-config
 adobe/aio-lib-core-errors
 adobe/aio-lib-core-logging
 adobe/aio-lib-core-tvm
-adobe/aio-lib-core-ims
-adobe/aio-lib-core-ims-jwt
-adobe/aio-lib-core-ims-oauth
+adobe/aio-lib-ims
+adobe/aio-lib-ims-jwt
+adobe/aio-lib-ims-oauth
 adobe/aio-lib-campaign-standard
 adobe/aio-lib-target
 adobe/aio-lib-analytics
