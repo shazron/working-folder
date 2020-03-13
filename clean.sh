@@ -21,7 +21,7 @@ fi
 cd $FOLDER_PATH
 
 # remove all Greenkeeper branches
-git ls-remote --heads origin  | sed 's?.*refs/heads/??' | grep "^greenkeeper/" | xargs -n 1 git push --delete $ORIGIN
+git ls-remote --heads $ORIGIN  | sed 's?.*refs/heads/??' | grep "^greenkeeper/" | xargs -n 1 git push --delete $ORIGIN
 
 # prune local tracking branches that have their remotes deleted
-git remote prune origin
+git remote prune $ORIGIN
