@@ -38,6 +38,7 @@ adobe/aio-app-actions-auth
 adobe/aio-app-actions-auth-passport
 adobe/aio-app-actions-jwt-ims
 adobe/aio-app-auth-cache
+adobe/generator-aio-app
 
 
 # AdobeDocs
