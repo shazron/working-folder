@@ -11,6 +11,7 @@ adobe/aio-cli-plugin-pgb
 adobe/aio-cli-plugin-app
 adobe/aio-cli-plugin-target
 adobe/aio-cli-plugin-ims
+adobe/aio-cli-plugin-info
 adobe/aio-sdk-core
 adobe/aio-sdk
 adobe/aio-lib-core-config
