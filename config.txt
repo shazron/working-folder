@@ -40,7 +40,8 @@ adobe/aio-app-actions-auth-passport
 adobe/aio-app-actions-jwt-ims
 adobe/aio-app-auth-cache
 adobe/generator-aio-app
-
+adobe/gen-health-table
+adobe/aio-lib-audience-manager-cd
 
 # AdobeDocs
 AdobeDocs/adobeio-runtime
