@@ -42,6 +42,7 @@ adobe/aio-app-auth-cache
 adobe/generator-aio-app
 adobe/gen-health-table
 adobe/aio-lib-audience-manager-cd
+adobe/aio-lib-console
 
 # AdobeDocs
 AdobeDocs/adobeio-runtime
