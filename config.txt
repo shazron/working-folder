@@ -42,6 +42,7 @@ adobe/aio-app-actions-auth-passport
 adobe/aio-app-actions-jwt-ims
 adobe/aio-app-auth-cache
 adobe/generator-aio-app
+adobe/generator-aio-console
 adobe/gen-health-table
 adobe/aio-lib-audience-manager-cd
 adobe/aio-lib-console
