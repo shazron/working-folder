@@ -121,3 +121,4 @@ ios-control/simctl
 # shazron
 shazron/aio-cli-plugin-edge
 shazron/working-folder
+shazron/vscode-gh-issue-notebooks
