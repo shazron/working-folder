@@ -5,7 +5,6 @@ adobe/aio-cli-plugin-config
 adobe/aio-cli-plugin-jwt-auth
 adobe/aio-cli-plugin-certificate
 adobe/aio-cli-plugin-console
-adobe/aio-cli-plugin-cna
 adobe/aio-cli-plugin-runtime
 adobe/aio-cli-plugin-pgb
 adobe/aio-cli-plugin-app

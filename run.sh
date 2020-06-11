@@ -79,7 +79,7 @@ do
     if [[ ! -d $REPO_TOKEN ]]; then
         ./clone.sh $SERVER/$REPO_TOKEN $REPO_TOKEN
     fi
-    ./update.sh $REPO_TOKEN
+    ./run-aux.sh $REPO_TOKEN
 done
 
 echo "-----Done updating repos-----"
