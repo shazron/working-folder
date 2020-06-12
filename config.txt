@@ -46,6 +46,7 @@ adobe/generator-aio-console
 adobe/gen-health-table
 adobe/aio-lib-audience-manager-cd
 adobe/aio-lib-console
+adobe/aio-lib-runtime
 
 # AdobeDocs
 AdobeDocs/adobeio-runtime
