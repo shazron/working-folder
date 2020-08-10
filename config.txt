@@ -49,8 +49,8 @@ adobe/aio-lib-audience-manager-cd
 adobe/aio-lib-console
 adobe/aio-lib-runtime
 adobe/parliament-ui-components
-adobe/gatsby-theme-spectrum-example
-adobe/gatsby-theme-spectrum
+adobe/gatsby-theme-parliament-example
+adobe/gatsby-theme-parliament
 
 # AdobeDocs
 AdobeDocs/adobeio-runtime
