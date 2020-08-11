@@ -51,6 +51,8 @@ adobe/aio-lib-runtime
 adobe/parliament-ui-components
 adobe/gatsby-theme-parliament-example
 adobe/gatsby-theme-parliament
+adobe/gatsby-add-launch-script
+adobe/gatsby-source-github-file-contributors
 
 # AdobeDocs
 AdobeDocs/adobeio-runtime
