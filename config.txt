@@ -13,6 +13,7 @@ adobe/aio-cli-plugin-ims
 adobe/aio-cli-plugin-info
 adobe/aio-cli-plugin-events
 adobe/aio-cli-plugin-doc
+adobe/aio-cli-plugin-boilerplate
 adobe/aio-sdk-core
 adobe/aio-sdk
 adobe/aio-lib-core-config
