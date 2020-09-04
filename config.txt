@@ -130,3 +130,12 @@ ios-control/simctl
 shazron/aio-cli-plugin-edge
 shazron/working-folder
 shazron/vscode-gh-issue-notebooks
+
+# cna
+cna/tessa-runner https://git.corp.adobe.com
+cna/aio-lib-exchange https://git.corp.adobe.com
+cna/unified-shell https://git.corp.adobe.com
+cna/aio-cli-login-function https://git.corp.adobe.com
+cna/aio-app-myapps https://git.corp.adobe.com
+cna/github-jira-issue-copier https://git.corp.adobe.com
+
