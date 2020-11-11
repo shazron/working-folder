@@ -54,9 +54,16 @@ adobe/gatsby-theme-parliament-example
 adobe/gatsby-theme-parliament
 adobe/gatsby-add-launch-script
 adobe/gatsby-source-github-file-contributors
+adobe/aio-run-detached
 
 # AdobeDocs
 AdobeDocs/adobeio-runtime
+AdobeDocs/cc-developer-platform-pages
+AdobeDocs/dev-site
+AdobeDocs/uxp-photoshop
+AdobeDocs/uxp
+AdobeDocs/cc-libraries-api
+
 
 # apache
 apache/cordova-amazon-fireos
